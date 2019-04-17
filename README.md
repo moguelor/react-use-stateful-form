@@ -4,3 +4,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Custom hook to manage form state for React 16+.
 
+## Run
+
+```
+yarn install
+yarn start
+```
+
