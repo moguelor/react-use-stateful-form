@@ -1,8 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# useStatefulForm [Live Demo](https://moguelor.github.io/react-use-stateful-form/)
 
-## react-use-stateful-form
-
-Custom hook to manage form state for React 16+.
+Custom hook created to manage the state of forms.
 
 ## Run
 
@@ -10,4 +8,3 @@ Custom hook to manage form state for React 16+.
 yarn install
 yarn start
 ```
-
