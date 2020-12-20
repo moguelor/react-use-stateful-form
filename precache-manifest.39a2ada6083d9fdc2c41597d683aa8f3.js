@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "7aa5417417dec81b8e3c",
+    "revision": "a9cf0c8a542c2e958118",
     "url": "/react-use-stateful-form/static/css/main.eb9a8b12.chunk.css"
   },
   {
-    "revision": "7aa5417417dec81b8e3c",
-    "url": "/react-use-stateful-form/static/js/main.4175cfab.chunk.js"
+    "revision": "a9cf0c8a542c2e958118",
+    "url": "/react-use-stateful-form/static/js/main.534bbffb.chunk.js"
   },
   {
     "revision": "318616b9006b2bfbc66b",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/react-use-stateful-form/static/js/2.6c2e770a.chunk.js"
   },
   {
-    "revision": "ba7da3b18ad1d955e3707faa8568470a",
+    "revision": "85be1d64fb38534a68db22ca9f6cec44",
     "url": "/react-use-stateful-form/index.html"
   }
 ];
