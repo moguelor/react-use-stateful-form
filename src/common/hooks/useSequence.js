@@ -1,7 +1,7 @@
 import {useRef} from 'react';
 
 /** 
- * Hook para generar una secuencia 
+ * Hook to generate a sequence. 
  * @param {*} initialNext Valor inicial siguiente.
  * */
 const useSequence = (initialNext) => {

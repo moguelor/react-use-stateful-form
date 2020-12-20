@@ -21,7 +21,7 @@ const REMOVE_ITEM = 'REMOVE_ITEM';
  * ACTIONS
  */
 
-/** Inicializa el formulario. */
+/** Initialize the form */
 const initializeForm = (initialValues) => {
     return {
         type: INITIALIZE,
@@ -29,7 +29,7 @@ const initializeForm = (initialValues) => {
     }
 }
 
-/** Reinicia el formulario. */
+/** Reset the form */
 const resetForm = (initialValues) => {
     return {
         type: RESET_FORM,
@@ -37,7 +37,7 @@ const resetForm = (initialValues) => {
     }
 }
 
-/** Cambia el valor del elemento. */
+/** Change the value of element. */
 const changeValueForm = (path, value) => {
     return {
         type: CHANGE_VALUE,
@@ -48,7 +48,7 @@ const changeValueForm = (path, value) => {
     }
 }
 
-/** Asigna errores al elemento. */
+/** Assign errors to element.*/
 const assignErrorForm = (path, value) => {
     return {
         type: ASSIGN_ERROR,
@@ -59,7 +59,7 @@ const assignErrorForm = (path, value) => {
     }
 }
 
-/** Cambia los valores de los metadatos. */
+/** Change the metadata values.*/
 const changeMetadata = (path, name, value) => {
     return {
         type: CHANGE_METADATA,
@@ -71,7 +71,7 @@ const changeMetadata = (path, name, value) => {
     }
 }
 
-/** Elimina un elemento del arreglo. */
+/** Delete element of array.*/
 const removeItem = (path, index) => {
     return {
         type: REMOVE_ITEM,
@@ -134,15 +134,15 @@ const reducer = (state, { type, payload }) => {
  */
 
 /**
- * Hook para usar para los fields.
+ * Hook to use in fields
  * @param {*} customValidation Validación del usuario.
  * @param {*} state State del formulario.
  * @param {*} dispatch Evento que disparará las acciones.
  * 
  * return
  * 
- * getField // Obtener propiedades del field.
- * getValueByPath // Obtener el valor en especifico.
+ * getField // Get properties field.  
+ * getValueByPath // Get the specific value.
  */
 const useField = (customValidation, state, dispatch) => {
 
@@ -208,14 +208,15 @@ const useField = (customValidation, state, dispatch) => {
 }
 
 /**
- * Hook para usar en caso que el field sea un arreglo.
- * @param {*} customValidation Validación del usuario.
- * @param {*} state State del formulario.
- * @param {*} dispatch Evento que disparará las acciones.
+ * Hook to use as field array.
+ * 
+ * @param {*} customValidation Validation.
+ * @param {*} state Form state.
+ * @param {*} dispatch Dispatch event.
  * 
  * return
  * 
- * getFieldArray // Obtener propiedades del fieldArray
+ * getFieldArray // Get fieldArray properties. 
  */
 const useFieldArray = (customValidation, state, dispatch) => {
 
@@ -240,20 +241,21 @@ const useFieldArray = (customValidation, state, dispatch) => {
 }
 
 /**
- * Hook para usar el state completo para la manipulación del formulario.
- * @param initialValues  Valores iniciales.
- * @param customValidation Validación del usuario.
- * @param handleSuccess Evento a ejecutar en caso de exito.
+ * Main hook to use for the state form.
+ * 
+ * @param initialValues  Initial values.
+ * @param customValidation Validation values.
+ * @param handleSuccess On success callback.
  * 
  * return
  * ```
  * {
- *  state, // State del formulario.
- *  reset, // Reinicio del formulario.
- *  getField, // Obtener propiedades el field.
- *  getFieldArray, // Obtener propiedades del field array.
- *  onSubmit, // Evento en caso de exito.
- *  validate // Validación del formulario.
+ *  state, // State form.
+ *  reset, // Function Reset form.
+ *  getField, // get field properties.
+ *  getFieldArray, // get field array properties. 
+ *  onSubmit, // Callback onSuccess
+ *  validate // Validations.
  * }
  * ```
  */
@@ -265,8 +267,6 @@ const useFormState = (initialValues, customValidation, handleSuccess) => {
 
     /**
      *  TODO: Implement a best way to manage global validation.
-     *   let input = getField('paternalSurname');
-     *   console.log('input.validate', input.validate());
      */
     const validate = () => {}
 

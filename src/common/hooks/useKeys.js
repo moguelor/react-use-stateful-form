@@ -2,7 +2,7 @@ import {useState} from 'react';
 import useSequence from './useSequence';
 
 /**
- * Hook para generar arreglos.
+ * Hook to generate arrays.
  * @param {*} initial Valor inicial
  */
 const useKeys = (initial) => {
