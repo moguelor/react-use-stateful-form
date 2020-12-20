@@ -11,8 +11,8 @@ const InputArray = ({ keys, getField, remove, add }) => {
                         <div key={key}>
                             <small styles={{fontSize: 13}}>Member #{index + 1}</small> <br/>
                             <button type="button" onClick={() => remove(`members`, index, key)}> REMOVE </button> 
-                            <Input placeholder={'Nombre'} {...getField(`members[${index}].name`)} />
-                            <Input placeholder={'Telefono'} {...getField(`members[${index}].phone`)} />
+                            <Input placeholder={'Name'} {...getField(`members[${index}].name`)} />
+                            <Input placeholder={'Phone'} {...getField(`members[${index}].phone`)} />
                         </div>
                     )
                 })

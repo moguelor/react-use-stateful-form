@@ -5,7 +5,7 @@ const validate = (values = {}) => {
     };
 
     if (is.empty(values.clubName)) {
-        errors.clubName = 'El club es requerido.';
+        errors.clubName = 'The club is required';
     }
 
     const membersArrayErrors = [];
@@ -13,12 +13,12 @@ const validate = (values = {}) => {
         let memberErrors = {};
 
         if (!member.name) {
-            memberErrors.name = 'El nombre es requerido.';
+            memberErrors.name = 'The name is required';
             membersArrayErrors[memberIndex] = memberErrors;
         }
 
         if (!member.phone) {
-            memberErrors.phone = 'El telefono es requerido.';
+            memberErrors.phone = 'The phone is required';
             membersArrayErrors[memberIndex] = memberErrors;
         }
 
