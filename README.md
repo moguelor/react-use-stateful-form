@@ -2,8 +2,6 @@
 
 Custom hook created to manage the state in forms with field and fieldArrays for React 16+. 
 
-From comunity to community
-
 ## Run
 
 ```
@@ -93,3 +91,9 @@ const validate = (values = {}) => {
 export default validate;
 
 ```
+
+# Contributions
+
+You can use this component if you want can contribute send email to jmoguelruiz@gmail.com.
+
+_**From comunity to comunity...**_
