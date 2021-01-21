@@ -96,4 +96,4 @@ export default validate;
 
 You can use this component if you want can contribute send email to jmoguelruiz@gmail.com.
 
-_**From comunity to comunity...**_
+_**From community to community...**_
